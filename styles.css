@@ -16,13 +16,6 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'sans-serif', sans-serif;
-    background-image:
-        radial-gradient(circle 28rem at 45% 0%,  var(--glow-pink), transparent 70%),
-        radial-gradient(circle 20rem at 15% 10%, var(--glow-blue), transparent 70%),
-        radial-gradient(circle 18rem at 87% 12%, var(--glow-red),  transparent 70%),
-        radial-gradient(circle 24rem at 50% 100%, var(--glow-blue), transparent 70%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .article {
