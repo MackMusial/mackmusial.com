@@ -7,37 +7,22 @@
     --button-bg-color: #0078d4;
     --button-hover-bg-color: #026ec1;
     --button-text-color: #ffffff;
-    --glow-red: rgb(220 20 60 / 0.3);
-    --glow-purple: rgb(75 30 120 / 0.6);
-    --glow-blue: rgb(0 102 204 / 0.2);
-    --glow-pink: rgb(255 16 240 / 0.4);
+    --glow-pink: rgb(200 70 200 / 0.55);
+    --glow-blue: rgb(40 130 240 / 0.45);
+    --glow-red: rgb(220 30 90 / 0.45);
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'sans-serif', sans-serif;
-    background-image: radial-gradient(
-        circle 45rem at 90%,
-        var(--glow-red),
-        transparent 23%
-    ),
-     radial-gradient(
-        circle 35rem at 45% 10%,
-        var(--glow-purple),
-        transparent 27%
-    ),
-    radial-gradient(
-        circle 25rem at 10%,
-        var(--glow-blue),
-        transparent 25%
-    ),
-    radial-gradient(
-        circle 50rem at 60% 75%,
-        var(--glow-pink),
-        transparent 30%
-    );
+    background-image:
+        radial-gradient(circle 28rem at 45% 0%,  var(--glow-pink), transparent 70%),
+        radial-gradient(circle 20rem at 15% 10%, var(--glow-blue), transparent 70%),
+        radial-gradient(circle 18rem at 87% 12%, var(--glow-red),  transparent 70%),
+        radial-gradient(circle 24rem at 50% 100%, var(--glow-blue), transparent 70%);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .article {
@@ -73,4 +58,49 @@ p {
     display: flex;
     gap: 1.25rem;
     justify-content: space-between;
+}
+
+.glows {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+}
+
+.glow-pink {
+    width: 32rem;
+    height: 32rem;
+    top: -12rem;
+    left: 30%;
+    background-color: var(--glow-pink);
+}
+
+.glow-blue-top {
+    width: 22rem;
+    height: 22rem;
+    top: -6rem;
+    left: 2%;
+    background-color: var(--glow-blue);
+}
+
+.glow-red {
+    width: 24rem;
+    height: 24rem;
+    top: -4rem;
+    right: 2%;
+    background-color: var(--glow-red);
+}
+
+.glow-blue-bottom {
+    width: 30rem;
+    height: 30rem;
+    bottom: -16rem;
+    left: 38%;
+    background-color: var(--glow-blue);
 }
