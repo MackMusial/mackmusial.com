@@ -11,6 +11,6 @@ p {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-.resume-link:hover {
+.resume-link:hover, .resume-link:focus-visible {
     background-color: darkgreen;
 }
