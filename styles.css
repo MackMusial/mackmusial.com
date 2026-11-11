@@ -12,13 +12,17 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'sans-serif', sans-serif;
+}
+
+.article {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 p { 
     color: var(--muted-text-color);
+    max-width: 65ch;
 }
 
 .resume-link {
