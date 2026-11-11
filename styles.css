@@ -7,12 +7,37 @@
     --button-bg-color: #0078d4;
     --button-hover-bg-color: #026ec1;
     --button-text-color: #ffffff;
+    --glow-red: rgb(220 20 60 / 0.3);
+    --glow-purple: rgb(75 30 120 / 0.6);
+    --glow-blue: rgb(0 102 204 / 0.2);
+    --glow-pink: rgb(255 16 240 / 0.4);
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'sans-serif', sans-serif;
+    background-image: radial-gradient(
+        circle 45rem at 90%,
+        var(--glow-red),
+        transparent 23%
+    ),
+     radial-gradient(
+        circle 35rem at 45% 10%,
+        var(--glow-purple),
+        transparent 27%
+    ),
+    radial-gradient(
+        circle 25rem at 10%,
+        var(--glow-blue),
+        transparent 25%
+    ),
+    radial-gradient(
+        circle 50rem at 60% 75%,
+        var(--glow-pink),
+        transparent 30%
+    );
+    background-repeat: no-repeat;
 }
 
 .article {
@@ -28,7 +53,7 @@ p {
 .resume-link {
     background-color: var(--button-bg-color);
     color: var(--button-text-color);
-    padding: 10px 20px;
+    padding: 0.5rem 1.0rem;
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
@@ -42,4 +67,10 @@ p {
     border-radius: 50%;
     aspect-ratio: 1;
     object-fit: cover;
+}
+
+.hero {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-between;
 }
