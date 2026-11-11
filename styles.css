@@ -37,3 +37,9 @@ p {
 .resume-link:hover, .resume-link:focus-visible {
     background-color: var(--button-hover-bg-color);
 }
+
+.hero-photo {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
