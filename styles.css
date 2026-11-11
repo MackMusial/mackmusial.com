@@ -7,9 +7,6 @@
     --button-bg-color: #0078d4;
     --button-hover-bg-color: #026ec1;
     --button-text-color: #ffffff;
-    --glow-pink: rgb(200 70 200 / 0.55);
-    --glow-blue: rgb(40 130 240 / 0.45);
-    --glow-red: rgb(220 30 90 / 0.45);
 }
 
 body {
@@ -66,34 +63,34 @@ p {
     filter: blur(120px);
 }
 
-.glow-pink {
+.glow-top-middle {
     width: 32rem;
     height: 32rem;
     top: -12rem;
     left: 30%;
-    background-color: var(--glow-pink);
+    background-image: linear-gradient(135deg, rgb(255, 105, 180), rgb(0, 255, 255), rgb(138, 43, 226));
 }
 
-.glow-blue-top {
+.glow-top-left {
     width: 22rem;
     height: 22rem;
     top: -6rem;
     left: 2%;
-    background-color: var(--glow-blue);
+    background-image: linear-gradient(135deg, rgb(255, 40, 40), rgb(230, 0, 126), rgb(40, 60, 200));
 }
 
-.glow-red {
+.glow-top-right {
     width: 24rem;
     height: 24rem;
     top: -4rem;
     right: 2%;
-    background-color: var(--glow-red);
+    background-image: linear-gradient(135deg, rgb(0, 212, 255), rgb(102, 51, 153), rgb(255, 16, 240));
 }
 
-.glow-blue-bottom {
+.glow-bottom-middle {
     width: 30rem;
     height: 30rem;
     bottom: -16rem;
     left: 38%;
-    background-color: var(--glow-blue);
+    background-image: linear-gradient(135deg, rgb(255, 94, 58), rgb(124, 58, 237), rgb(255, 20, 147));
 }
