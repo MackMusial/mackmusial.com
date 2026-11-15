@@ -70,13 +70,13 @@ p {
 }
 
 .avatar-ring {
-    --ring: 5px;
-    width: 200px;
-    aspect-ratio: 1;
-    padding: var(--ring);
-    border-radius: 50%;
-    background: conic-gradient(
-        from var(--angle),
+    --ring: 5px; /* Thickness of the ring */
+    width: 200px; /* Set a fixed width for the ring */
+    aspect-ratio: 1; /* This ensures the ring maintains a square aspect ratio */
+    padding: var(--ring); /* This creates space for the ring around the avatar */
+    border-radius: 50%; /* This makes the ring circular */
+    background: conic-gradient( 
+        from var(--angle), /* This makes the gradient rotate based on the --angle variable */
         #22d3ee,
         #3b82f6,
         #7c3aed,
@@ -84,19 +84,19 @@ p {
         #ec4899,
         #22d3ee
     );
-    box-shadow: 0 0 30px rgba(124, 58, 237, 0.45);
-    animation: spin 6s linear infinite;
-    flex-shrink: 0;
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.45); /* This adds a glow effect to the ring */
+    animation: spin 6s linear infinite; /* This makes the ring spin continuously */
+    flex-shrink: 0; /* This prevents the ring from shrinking in a flex container */
 }
 
 .avatar {
-    width: 100%;
-    aspect-ratio: 1;
+    width: 100%; /* This makes the avatar fill the ring */
+    aspect-ratio: 1;  /* This ensures the avatar maintains a square aspect ratio */
     border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    border: 4px solid #1a1a1a;
-    box-sizing: border-box;
+    object-fit: cover; /* This ensures the avatar image covers the entire area without distortion */
+    display: block; /* This removes any default inline spacing */ 
+    border: 4px solid #1a1a1a;  
+    box-sizing: border-box; /* This ensures the border is included in the element's total width and height */
 }
 
 @keyframes spin {
