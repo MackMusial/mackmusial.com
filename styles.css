@@ -23,8 +23,10 @@ body {
     margin: 0.25rem 0 0.5rem 0;
 }
 
+
+
 h1 {
-    font-size: 5.5rem;
+    font-size: clamp(2.5rem, 10vw, 5.5rem);
     font-weight: 700;
     line-height: 0.9;
     margin: 0.25rem 0 1rem 0;
@@ -159,6 +161,9 @@ p {
     .hero {
         flex-direction: column;
     }
+    .hero-text {
+    text-align: center;
+}
 }
 
 @media (prefers-reduced-motion: reduce){
