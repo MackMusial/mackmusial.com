@@ -35,7 +35,7 @@ Mack wants it to really stand out, not just look acceptable. Inspired by two Web
 - Light/dark toggle that remembers the choice.
 - Scroll-reveal animations using `IntersectionObserver`, respecting `prefers-reduced-motion`.
 - "Served from a laptop with a broken keyboard" footer badge with live uptime.
-- "Ask about Mack" AI chat that answers employers' questions from Mack's real info (resume, projects). Build after the visitor counter API, since it's the same JS `fetch` → Python API pattern. Needs: API key kept server-side, rate limiting and a spending cap, answers limited to provided facts, and an "AI-generated, may be wrong" note.
+- "Ask about Mack" AI chat that answers employers' questions from Mack's real info (resume, projects). Build after the visitor counter API, since it's the same JS `fetch` → Python API pattern. Needs: API key kept server-side, rate limiting and a spending cap, answers limited to provided facts, and an "AI-generated, may be wrong" note. **Update 2026-11-15:** Mack now plans to run the chatbot on his own hardware (a local model, no paid API tokens), and the hero tagline already lists "AI Developer" on that basis. Mack has already tested a Llama 3B model (probably Llama 3.2 3B) at about 21 tokens/s, which is fast enough for chat.
 
 ## Hosting plan
 Old laptop with a destroyed keyboard, running Ubuntu. Not set up yet.

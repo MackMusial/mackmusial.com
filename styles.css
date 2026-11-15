@@ -42,6 +42,12 @@ p {
     max-width: 65ch;
 }
 
+.hero-tagline {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
 .resume-link {
     background-color: var(--button-bg-color);
     color: var(--button-text-color);
