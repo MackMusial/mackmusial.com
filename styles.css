@@ -17,6 +17,8 @@ body {
     padding: 1rem;
     padding-top: max(1rem,env(safe-area-inset-top)); 
     position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .hero-intro {
@@ -109,6 +111,10 @@ p {
 
 @keyframes spin {
     to { --angle: 360deg;}
+}
+
+.about {
+    margin-top: 4rem;
 }
 
 .hero {
