@@ -124,6 +124,28 @@ p {
     align-items: center;
 }
 
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background-color: var(--surface-color);
+    color: var(--button-text-color);
+    padding: .3rem 0.8rem;
+    border-radius: 999px; /* Fully rounded pill shape */
+    font-size: 0.875rem;
+}
+
+.skills li:nth-child(5n+1) { background: #0e7490;}
+.skills li:nth-child(5n+2) { background: #1d4ed8;}
+.skills li:nth-child(5n+3) { background: #6d28d9;}
+.skills li:nth-child(5n+4) { background: #a21caf;}
+.skills li:nth-child(5n+5) { background: #be185d;}
+
 .glows {
     position: absolute;
     inset: 0;
