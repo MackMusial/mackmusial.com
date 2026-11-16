@@ -7,6 +7,9 @@
     --button-bg-color: #0078d4;
     --button-hover-bg-color: #026ec1;
     --button-text-color: #ffffff;
+    --border-color: #2b2b2b;
+    --status-online-color: #3fb950;
+    --status-offline-color: #f85149;
 }
 
 body {
@@ -146,6 +149,41 @@ p {
 .skills li:nth-child(5n+4) { background: #a21caf;}
 .skills li:nth-child(5n+5) { background: #be185d;}
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.875rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.server-status {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.4rem;
+    border-radius: 50%;
+    background-color: var(--status-offline-color);
+    box-shadow: 0 0 6px var(--status-offline-color);
+}
+
 .glows {
     position: absolute;
     inset: 0;
@@ -198,6 +236,15 @@ p {
     .hero-text {
     text-align: center;
 }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .server-status {
+        flex-direction: column;
+        gap: 0.25rem;
+        border-radius: 1rem;
+    }
 }
 
 @media (prefers-reduced-motion: reduce){
