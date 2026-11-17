@@ -10,6 +10,10 @@
     --border-color: #2b2b2b;
     --status-online-color: #3fb950;
     --status-offline-color: #f85149;
+    --code-keyword-color: #569cd6;
+    --code-variable-color: #4fc1ff;
+    --code-property-color: #9cdcfe;
+    --code-string-color: #ce9178;
 }
 
 body {
@@ -131,6 +135,7 @@ p {
     padding: 1rem 1.25rem;
     border-radius: 12px;
     backdrop-filter: blur(12px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .apple-dots {
@@ -153,7 +158,13 @@ p {
     margin: 0;
     font-family: ui-monospace, Consolas, monospace;
     font-size: 0.85rem;
+    line-height: 1.5;
 }
+
+.code-card .keyword { color: var(--code-keyword-color); }
+.code-card .variable { color: var(--code-variable-color); }
+.code-card .string { color: var(--code-string-color); }
+.code-card .property { color: var(--code-property-color); }
 
 @keyframes spin {
     to { --angle: 360deg;}
@@ -287,6 +298,22 @@ p {
         gap: 0.25rem;
         border-radius: 1rem;
     }
+    .code-card  {
+        left: 70%;
+        top: -30%;
+    }
+    .avatar-ring {
+        width: 150px;   
+    }
+
+    .code-card pre {
+        font-size: 0.45rem;
+    }
+    .hero-photo {
+        margin-top: 3.5rem;
+        left: -25%;
+    }
+
 }
 
 @media (prefers-reduced-motion: reduce){
