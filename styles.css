@@ -10,10 +10,10 @@
     --border-color: #2b2b2b;
     --status-online-color: #3fb950;
     --status-offline-color: #f85149;
-    --code-keyword-color: #569cd6;
-    --code-variable-color: #4fc1ff;
-    --code-property-color: #9cdcfe;
-    --code-string-color: #ce9178;
+    --code-keyword-color: #ff3b3b;
+    --code-variable-color: #ffb000;
+    --code-property-color: #2fa8ff;
+    --code-string-color: #39ff14;
 }
 
 body {
