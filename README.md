@@ -1,3 +1,3 @@
-##https://mackmusial.github.io/mackmusial.com/##
+https://mackmusial.github.io/mackmusial.com/
 
 Live Demo
