@@ -125,6 +125,8 @@ p {
 
 .hero-photo {
     position: relative;
+    right: 10%;
+    margin-top: 10rem
 }
 
 .code-card {
