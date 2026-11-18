@@ -64,27 +64,40 @@ p {
     margin-bottom: 1.25rem;
 }
 
-.resume-link {
-    background-color: var(--button-bg-color);
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+/* Shared by both hero buttons */
+.button {
+    display: inline-block;
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
     color: var(--button-text-color);
     text-decoration: none;
-    display: inline-block;
-    border-radius: 5px;
     transition: 0.3s ease;
-    padding: 1.0rem 1.2rem 1.0rem 1.2rem;
+}
+
+.button:hover,
+.button:focus-visible {
+    filter: brightness(1.2);
+}
+
+/* Visible ring for keyboard users */
+.button:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+.resume-link {
+    background-color: var(--button-bg-color);
 }
 
 .project-link {
-    color: var(--button-text-color);
-    padding: 1.0rem 1.2rem 1.0rem 1.2rem;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 5px;
-    background-image: linear-gradient(135deg, rgb(31, 81, 255), rgb(138, 43, 226), rgb(255, 7, 58));
-    transition: 0.3s ease;
-}
-.project-link:hover, .project-link:focus-visible, .resume-link:hover, .resume-link:focus-visible {
-    filter: brightness(1.2);
+    /* the red end is darkened so white text passes 4.5:1 contrast */
+    background-image: linear-gradient(135deg, rgb(31, 81, 255), rgb(138, 43, 226), rgb(209, 0, 47));
 }
 
 @property --angle {
@@ -125,19 +138,22 @@ p {
 
 .hero-photo {
     position: relative;
-    right: 10%;
-    margin-top: 10rem
+    /* Reserves real layout space for the part of the code card that
+       hangs off the photo's right side, so it never runs off-screen. */
+    margin-right: 21.5rem;
 }
 
 .code-card {
     position: absolute;
-    top: -5rem;
+    /* Starts just past the right edge of the head and sits on the
+       ring's top-right, so it only covers the wall behind it. */
+    top: -4rem;
     left: 70%;
     background-color: rgb(30 30 30 / 0.6);
     padding: 1rem 1.25rem;
     border-radius: 12px;
     backdrop-filter: blur(12px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
 }
 
 .apple-dots {
@@ -284,13 +300,25 @@ p {
     background-image: linear-gradient(135deg, rgb(255, 94, 58), rgb(124, 58, 237), rgb(255, 20, 147));
 }
 
-@media (max-width: 450px){
+/* Tablets and narrow windows: not enough width for text + photo + card
+   side by side, so the hero stacks. */
+@media (max-width: 1040px){
     .hero {
         flex-direction: column;
     }
     .hero-text {
         text-align: center;
     }
+    .skills,
+    .hero-actions {
+        justify-content: center;
+    }
+    .hero-photo {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 600px){
     .footer {
         flex-direction: column;
         text-align: center;
@@ -300,22 +328,28 @@ p {
         gap: 0.25rem;
         border-radius: 1rem;
     }
-    .code-card  {
-        left: 70%;
-        top: -30%;
-    }
     .avatar-ring {
-        width: 150px;   
+        width: 150px;
     }
-
+    .code-card {
+        top: -2.5rem;
+        left: 68%;
+        padding: 0.6rem 0.75rem;
+    }
+    .apple-dots {
+        margin-bottom: 0.5rem;
+    }
+    .apple-dots span {
+        width: 8px;
+        height: 8px;
+    }
     .code-card pre {
         font-size: 0.45rem;
     }
     .hero-photo {
         margin-top: 3.5rem;
-        left: -25%;
+        margin-right: 10.5rem;
     }
-
 }
 
 @media (prefers-reduced-motion: reduce){
