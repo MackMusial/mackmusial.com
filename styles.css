@@ -250,8 +250,8 @@ p {
     height: 0.5rem;
     margin-right: 0.4rem;
     border-radius: 50%;
-    background-color: var(--status-offline-color);
-    box-shadow: 0 0 6px var(--status-offline-color);
+    background-color: var(--status-online-color);
+    box-shadow: 0 0 6px var(--status-online-color);
 }
 
 .glows {
