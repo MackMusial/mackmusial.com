@@ -24,7 +24,7 @@ body {
     font-family: system-ui, sans-serif;
     margin: 0;
     padding: 1rem;
-    padding-top: max(1rem,env(safe-area-inset-top)); 
+    padding-top: max(1rem, env(safe-area-inset-top));
     position: relative;
     min-height: 100vh;
     box-sizing: border-box;
@@ -55,7 +55,7 @@ h1 {
     width: 100%;
 }
 
-p { 
+p {
     color: var(--muted-text-color);
     max-width: 65ch;
 }
@@ -109,33 +109,45 @@ p {
 }
 
 .avatar-ring {
-    --ring: 5px; /* Thickness of the ring */
-    width: 200px; /* Set a fixed width for the ring */
-    aspect-ratio: 1; /* This ensures the ring maintains a square aspect ratio */
-    padding: var(--ring); /* This creates space for the ring around the avatar */
-    border-radius: 50%; /* This makes the ring circular */
-    background: conic-gradient( 
-        from var(--angle), /* This makes the gradient rotate based on the --angle variable */
-        #22d3ee,
-        #3b82f6,
-        #7c3aed,
-        #d946ef,
-        #ec4899,
-        #22d3ee
-    );
-    box-shadow: 0 0 30px rgba(124, 58, 237, 0.45); /* This adds a glow effect to the ring */
-    animation: spin 6s linear infinite; /* This makes the ring spin continuously */
-    flex-shrink: 0; /* This prevents the ring from shrinking in a flex container */
+    --ring: 5px;
+    /* Thickness of the ring */
+    width: 200px;
+    /* Set a fixed width for the ring */
+    aspect-ratio: 1;
+    /* This ensures the ring maintains a square aspect ratio */
+    padding: var(--ring);
+    /* This creates space for the ring around the avatar */
+    border-radius: 50%;
+    /* This makes the ring circular */
+    background: conic-gradient(from var(--angle),
+            /* This makes the gradient rotate based on the --angle variable */
+            #22d3ee,
+            #3b82f6,
+            #7c3aed,
+            #d946ef,
+            #ec4899,
+            #22d3ee);
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.45);
+    /* This adds a glow effect to the ring */
+    animation: spin 6s linear infinite;
+    /* This makes the ring spin continuously */
+    flex-shrink: 0;
+    /* This prevents the ring from shrinking in a flex container */
 }
 
 .avatar {
-    width: 100%; /* This makes the avatar fill the ring */
-    aspect-ratio: 1;  /* This ensures the avatar maintains a square aspect ratio */
+    width: 100%;
+    /* This makes the avatar fill the ring */
+    aspect-ratio: 1;
+    /* This ensures the avatar maintains a square aspect ratio */
     border-radius: 50%;
-    object-fit: cover; /* This ensures the avatar image covers the entire area without distortion */
-    display: block; /* This removes any default inline spacing */ 
+    object-fit: cover;
+    /* This ensures the avatar image covers the entire area without distortion */
+    display: block;
+    /* This removes any default inline spacing */
     border: 4px solid var(--bg-color);
-    box-sizing: border-box; /* This ensures the border is included in the element's total width and height */
+    box-sizing: border-box;
+    /* This ensures the border is included in the element's total width and height */
 }
 
 .hero-photo {
@@ -199,9 +211,17 @@ p {
     border-radius: 50%;
 }
 
-.apple-dots span:nth-child(1) {background-color: #ff5f57;}
-.apple-dots span:nth-child(2) {background-color: #febc2e;}
-.apple-dots span:nth-child(3) {background-color: #28c840;}
+.apple-dots span:nth-child(1) {
+    background-color: #ff5f57;
+}
+
+.apple-dots span:nth-child(2) {
+    background-color: #febc2e;
+}
+
+.apple-dots span:nth-child(3) {
+    background-color: #28c840;
+}
 
 .code-card pre {
     margin: 0;
@@ -210,13 +230,26 @@ p {
     line-height: 1.5;
 }
 
-.code-card .keyword { color: var(--code-keyword-color); }
-.code-card .variable { color: var(--code-variable-color); }
-.code-card .string { color: var(--code-string-color); }
-.code-card .property { color: var(--code-property-color); }
+.code-card .keyword {
+    color: var(--code-keyword-color);
+}
+
+.code-card .variable {
+    color: var(--code-variable-color);
+}
+
+.code-card .string {
+    color: var(--code-string-color);
+}
+
+.code-card .property {
+    color: var(--code-property-color);
+}
 
 @keyframes spin {
-    to { --angle: 360deg;}
+    to {
+        --angle: 360deg;
+    }
 }
 
 .about {
@@ -241,15 +274,30 @@ p {
 .skills li {
     color: var(--button-text-color);
     padding: .3rem 0.8rem;
-    border-radius: 999px; /* Fully rounded pill shape */
+    border-radius: 999px;
+    /* Fully rounded pill shape */
     font-size: 0.875rem;
 }
 
-.skills li:nth-child(5n+1) { background: #0e7490;}
-.skills li:nth-child(5n+2) { background: #1d4ed8;}
-.skills li:nth-child(5n+3) { background: #6d28d9;}
-.skills li:nth-child(5n+4) { background: #a21caf;}
-.skills li:nth-child(5n+5) { background: #be185d;}
+.skills li:nth-child(5n+1) {
+    background: #0e7490;
+}
+
+.skills li:nth-child(5n+2) {
+    background: #1d4ed8;
+}
+
+.skills li:nth-child(5n+3) {
+    background: #6d28d9;
+}
+
+.skills li:nth-child(5n+4) {
+    background: #a21caf;
+}
+
+.skills li:nth-child(5n+5) {
+    background: #be185d;
+}
 
 .footer {
     display: flex;
@@ -353,94 +401,179 @@ p {
     color: rgb(255 255 255 / 0.6);
 }
 
-.snowflakes span:nth-child(1) { left: 7%; animation-duration: 8s; animation-delay: 0s; font-size: 20px; top: 35%; }
-.snowflakes span:nth-child(2) { left: 23%; animation-duration: 10s; animation-delay: -5s; font-size: 15px; top: 25%; }
-.snowflakes span:nth-child(3) { left: 38%; animation-duration: 12s; animation-delay: -2s; font-size: 12px; top: 15%; }
-.snowflakes span:nth-child(4) { left: 52%; animation-duration: 9s; animation-delay: -7s; font-size: 17px; top: 45%; }
-.snowflakes span:nth-child(5) { left: 66%; animation-duration: 11s; animation-delay: -4s; font-size: 22px; top: 60%; }
-.snowflakes span:nth-child(6) { left: 79%; animation-duration: 10s; animation-delay: -1s; font-size: 14px; top: 70%; }
-.snowflakes span:nth-child(7) { left: 88%; animation-duration: 13s; animation-delay: -6s; font-size: 20px; top: 80%; }
-.snowflakes span:nth-child(8) { left: 95%; animation-duration: 9s; animation-delay: -3s; font-size: 12px; top: 90%; }
+.snowflakes span:nth-child(1) {
+    left: 7%;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    font-size: 20px;
+    top: 35%;
+}
+
+.snowflakes span:nth-child(2) {
+    left: 23%;
+    animation-duration: 10s;
+    animation-delay: -5s;
+    font-size: 15px;
+    top: 25%;
+}
+
+.snowflakes span:nth-child(3) {
+    left: 38%;
+    animation-duration: 12s;
+    animation-delay: -2s;
+    font-size: 12px;
+    top: 15%;
+}
+
+.snowflakes span:nth-child(4) {
+    left: 52%;
+    animation-duration: 9s;
+    animation-delay: -7s;
+    font-size: 17px;
+    top: 45%;
+}
+
+.snowflakes span:nth-child(5) {
+    left: 66%;
+    animation-duration: 11s;
+    animation-delay: -4s;
+    font-size: 22px;
+    top: 60%;
+}
+
+.snowflakes span:nth-child(6) {
+    left: 79%;
+    animation-duration: 10s;
+    animation-delay: -1s;
+    font-size: 14px;
+    top: 70%;
+}
+
+.snowflakes span:nth-child(7) {
+    left: 88%;
+    animation-duration: 13s;
+    animation-delay: -6s;
+    font-size: 20px;
+    top: 80%;
+}
+
+.snowflakes span:nth-child(8) {
+    left: 95%;
+    animation-duration: 9s;
+    animation-delay: -3s;
+    font-size: 12px;
+    top: 90%;
+}
 
 @keyframes fall {
-    0%   { transform: translateX(0)    translateY(-100vh) rotate(0deg); }
-    50%  { transform: translateX(5vw)  translateY(0)      rotate(180deg); }
-    100% { transform: translateX(0)    translateY(100vh)  rotate(0deg); }
+    0% {
+        transform: translateX(0) translateY(-100vh) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(5vw) translateY(0) rotate(180deg);
+    }
+
+    100% {
+        transform: translateX(0) translateY(100vh) rotate(0deg);
+    }
 }
 
 
-@media (max-width: 1040px){
+@media (max-width: 1040px) {
     .hero {
         flex-direction: column;
     }
+
     .hero-text {
         text-align: center;
     }
+
     .skills,
     .hero-actions {
         justify-content: center;
     }
+
     .hero-photo {
         margin-top: 5rem;
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
+
     /* Smaller glows pushed to the edges so the hero isn't one wash */
     .glow {
         width: 70vw;
         height: 70vw;
     }
+
     .glow-top-left {
         top: -30vw;
         left: -35vw;
     }
+
     .glow-top-right {
         top: -20vw;
         right: -30vw;
     }
+
     .glow-top-middle {
         display: none;
     }
+
     .footer {
         flex-direction: column;
         text-align: center;
     }
+
     .server-status {
         flex-direction: column;
         gap: 0.25rem;
         border-radius: 1rem;
     }
+
     .avatar-ring {
         width: 150px;
     }
+
     .code-card {
         top: -2.5rem;
         left: 68%;
         padding: 0.6rem 0.75rem;
     }
+
     .apple-dots {
         margin-bottom: 0.5rem;
     }
+
     .apple-dots span {
         width: 8px;
         height: 8px;
     }
+
     .code-card pre {
         font-size: 0.45rem;
     }
+
     .hero-photo {
         margin-top: 3.5rem;
         margin-right: 10.5rem;
     }
 }
 
-@media (prefers-reduced-motion: reduce){
-    .avatar-ring {animation: none;}
-    .snowflakes span {animation: none;}
+@media (prefers-reduced-motion: reduce) {
+    .avatar-ring {
+        animation: none;
+    }
+
+    .snowflakes span {
+        animation: none;
+    }
 }
 
 /* Visitors who ask for more contrast get a plain background */
-@media (prefers-contrast: more){
-    .glows {display: none;}
+@media (prefers-contrast: more) {
+    .glows {
+        display: none;
+    }
 }
