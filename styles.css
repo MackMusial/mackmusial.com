@@ -148,6 +148,9 @@ p {
     border-radius: 8px;
     width: 36px;
     height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .badge-server {
@@ -155,9 +158,6 @@ p {
     left: 0;
     background-image: linear-gradient(135deg, #EC4899, #8B5CF6);
     transform: rotate(10deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .badge-code {
@@ -165,9 +165,6 @@ p {
     left: 0;
     background-image: linear-gradient(135deg, #8B5CF6, #22D3EE);
     transform: rotate(-10deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .badge-ai {
@@ -175,9 +172,6 @@ p {
     right: 0;
     background-image: linear-gradient(135deg, #22D3EE, #EC4899);
     transform: rotate(15deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
