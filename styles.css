@@ -154,19 +154,30 @@ p {
     top: 0;
     left: 0;
     background-image: linear-gradient(135deg, #EC4899, #8B5CF6);
-    transform: rotate(35deg);
+    transform: rotate(10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .badge-code {
     bottom: 0;
     left: 0;
     background-image: linear-gradient(135deg, #8B5CF6, #22D3EE);
+    transform: rotate(-10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .badge-ai {
     bottom: 0;
     right: 0;
     background-image: linear-gradient(135deg, #22D3EE, #EC4899);
+    transform: rotate(15deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -280,6 +291,8 @@ p {
     background-color: var(--status-online-color);
     box-shadow: 0 0 6px var(--status-online-color);
 }
+
+
 
 .glows {
     position: absolute;
