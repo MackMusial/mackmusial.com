@@ -154,6 +154,7 @@ p {
     top: 0;
     left: 0;
     background-image: linear-gradient(135deg, #EC4899, #8B5CF6);
+    transform: rotate(35deg);
 }
 
 .badge-code {
