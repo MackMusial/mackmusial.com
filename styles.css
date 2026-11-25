@@ -143,6 +143,32 @@ p {
     margin-right: 21.5rem;
 }
 
+.badge {
+    position: absolute;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+}
+
+.badge-server {
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(135deg, #EC4899, #8B5CF6);
+}
+
+.badge-code {
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(135deg, #8B5CF6, #22D3EE);
+}
+
+.badge-ai {
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(135deg, #22D3EE, #EC4899);
+}
+
+
 .code-card {
     position: absolute;
     top: -4rem;
@@ -329,9 +355,12 @@ p {
 .snowflakes span:nth-child(8) { left: 95%; animation-duration: 9s; animation-delay: -3s; font-size: 12px; top: 90%; }
 
 @keyframes fall {
-    0% { transform: translateY(-100vh); }
-    100% { transform: translateY(100vh); }
+    0%   { transform: translateX(0)    translateY(-100vh) rotate(0deg); }
+    50%  { transform: translateX(5vw)  translateY(0)      rotate(180deg); }
+    100% { transform: translateX(0)    translateY(100vh)  rotate(0deg); }
 }
+
+
 @media (max-width: 1040px){
     .hero {
         flex-direction: column;
