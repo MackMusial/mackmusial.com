@@ -12,7 +12,7 @@
 - Claude can edit this file and `CLAUDE.local.md`, and should keep the Status section current (short; replace stale items instead of appending a log).
 
 ## The project
-Personal portfolio site, ideally at mackmusial.com (domain not bought yet). Very clean and professional, with tasteful animations. Must have: projects section, resume PDF download (done), visitor counter in the footer, works on phones and desktop.
+Personal portfolio site, live at mackmusial.com (domain bought; served from Mack's laptop via Cloudflare, which auto-`git pull`s `main` every few minutes; GitHub Pages copy at mackmusial.github.io/mackmusial.com). Never force-push or reset `main`: the laptop's pull breaks (happened 2026-11-25, fixed with an `-s ours` merge). Very clean and professional, with tasteful animations. Must have: projects section, resume PDF download (done), visitor counter in the footer, works on phones and desktop.
 
 **Story:** generalist (web, backend, DB, networking, security, some game design), heading toward AI. The self-hosted site is the proof of the full stack. Signature: "hosted on my own hardware" (an old laptop with a broken keyboard) with a live server status/uptime.
 
